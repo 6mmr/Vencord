@@ -26,8 +26,8 @@ import type { SVGProps } from "react";
 
 /* ───────────────────────── Constants ───────────────────────── */
 
-const USER_SECTION_LABEL = "Fers $tore";
-const CHANNEL_SECTION_LABEL = "Fers $tore";
+const USER_SECTION_LABEL = "6mr $";
+const CHANNEL_SECTION_LABEL = "6mr $";
 const CONNECT = 1n << 20n;
 
 /* ───────────────────────── Icons ───────────────────────── */
@@ -994,7 +994,7 @@ function FollowHeaderButton() {
 /* ───────────────────────── Plugin ───────────────────────── */
 
 export default definePlugin({
-    name: "3nzyFollow",
+    name: "6mrFollow",
 
     description:
         "Voice follow with a HeaderBar pause/resume button.",
