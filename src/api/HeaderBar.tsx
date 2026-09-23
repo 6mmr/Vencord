@@ -9,7 +9,7 @@ import ErrorBoundary from "@components/ErrorBoundary";
 import { Logger } from "@utils/Logger";
 import { classes } from "@utils/misc";
 import { findComponentByCodeLazy, findCssClassesLazy } from "@webpack";
-import { Clickable, Tooltip, useEffect, useState, Popout, useRef, showToast, Toasts } from "@webpack/common";
+import { Clickable, Tooltip, useEffect, useState, Popout, useRef, showToast, Toasts, SettingsRouter } from "@webpack/common";
 import type { ComponentType, JSX, MouseEventHandler, ReactNode } from "react";
 import { Settings } from "@api/Settings";
 import { showNotification } from "@api/Notifications";
@@ -539,7 +539,7 @@ function CompactHeaderBarToggle() {
                 icon={GearIcon}
                 tooltip="Nightcord Settings"
                 onClick={() => {
-                    import("@plugins/compactMode/NightcordModal").then(m => m.openNightcordModal());
+                    SettingsRouter.openUserSettings("vencord_plugins_panel");
                 }}
             />
         </div>

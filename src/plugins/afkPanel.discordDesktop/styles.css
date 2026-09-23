@@ -1,0 +1,61 @@
+/*
+ * Vencord, a Discord client mod
+ * Copyright (c) 2026 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+.vc-afkp-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--interactive-normal, #b5bac1);
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.vc-afkp-trigger:hover,
+.vc-afkp-trigger:focus-visible {
+    color: var(--interactive-hover, #fff);
+    background: var(--background-modifier-hover, #ffffff12);
+}
+
+.vc-afkp-title { display: inline-flex; align-items: center; gap: 9px; }
+.vc-afkp-shell { padding: 0 20px 18px; color: var(--text-normal, #dbdee1); }
+.vc-afkp-tabs { display: flex; align-items: center; gap: 5px; border-bottom: 1px solid var(--border-subtle, #ffffff14); margin-bottom: 18px; }
+.vc-afkp-tab { border-radius: 0; border-bottom: 2px solid transparent; padding: 10px 12px; }
+.vc-afkp-selected { border-bottom-color: var(--brand-500, #5865f2); color: var(--text-brand, #949cf7); }
+.vc-afkp-service { margin-left: auto; font-size: 11px; color: var(--text-muted, #949ba4); }
+.vc-afkp-online { color: var(--text-positive, #43b581); }
+.vc-afkp-field { display: flex; flex-direction: column; gap: 7px; margin: 12px 0; min-width: 0; font-size: 13px; font-weight: 600; }
+.vc-afkp-ids { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.vc-afkp-actions { display: flex; align-items: center; gap: 9px; margin: 4px 0 12px; }
+.vc-afkp-actions > span { margin-left: auto; font-size: 12px; color: var(--text-muted, #949ba4); }
+.vc-afkp-hint { color: var(--text-muted, #949ba4); font-size: 12px; line-height: 1.55; margin: 12px 0; }
+.vc-afkp-destination { font-size: 12px; color: var(--text-muted, #949ba4); overflow-wrap: anywhere; }
+.vc-afkp-destination > span { color: var(--text-normal, #dbdee1); }
+.vc-afkp-sessions { display: grid; gap: 10px; max-height: 270px; overflow-y: auto; margin-top: 17px; }
+.vc-afkp-session { padding: 13px; border: 1px solid var(--border-subtle, #ffffff14); border-radius: 10px; background: var(--background-secondary, #2b2d31); }
+.vc-afkp-session-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.vc-afkp-session-top strong { overflow-wrap: anywhere; font-size: 14px; }
+.vc-afkp-session > p { margin: 10px 0; font-size: 12px; line-height: 1.6; color: var(--text-muted, #949ba4); }
+.vc-afkp-session code { font-family: var(--font-code, monospace); }
+.vc-afkp-badge { border: 1px solid currentColor; border-radius: 20px; padding: 3px 8px; white-space: nowrap; font-size: 10px; text-transform: capitalize; }
+.vc-afkp-empty { text-align: center; padding: 24px 8px; border: 1px dashed var(--border-subtle, #ffffff20); border-radius: 10px; font-size: 13px; color: var(--text-muted, #949ba4); }
+.vc-afkp-error,
+.vc-afkp-session > .vc-afkp-error { color: var(--text-danger, #fa777c); line-height: 1.5; font-size: 12px; overflow-wrap: anywhere; }
+.vc-afkp-notice { padding: 10px 12px; border-radius: 8px; background: var(--background-modifier-accent, #ffffff12); font-size: 12px; line-height: 1.5; }
+.vc-afkp-about p { margin-bottom: 12px; }
+
+@media (width <= 520px) {
+    .vc-afkp-ids { grid-template-columns: 1fr; gap: 0; }
+    .vc-afkp-shell { padding-right: 12px; padding-left: 12px; }
+    .vc-afkp-service { max-width: 100px; text-align: right; }
+    .vc-afkp-session-top { align-items: flex-start; }
+}

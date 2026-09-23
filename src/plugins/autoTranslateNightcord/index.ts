@@ -1,4 +1,3 @@
-them.
 /*
  * Nightcord, a Discord client mod
  * Copyright (c) 2026 Vendicated and contributors

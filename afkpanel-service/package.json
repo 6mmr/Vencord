@@ -1,0 +1,18 @@
+{
+  "name": "mc5mr-afk-panel-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal, authenticated voice-session controller for AFK Panel",
+  "license": "GPL-3.0-or-later",
+  "author": "Mc5mr",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "configure": "node configure.cjs",
+    "start": "node server.cjs",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "3.7.1",
+    "ws": "8.21.3"
+  }
+}
