@@ -9,13 +9,13 @@ import "./styles.css";
 import { Button } from "@components/Button";
 import ErrorBoundary from "@components/ErrorBoundary";
 import definePlugin from "@utils/types";
-
+import { Devs } from "@utils/constants";
 import { closePanel, openPanel, PanelIcon } from "./ui";
 
 export default definePlugin({
     name: "AFKPanel",
     description: "Control personal voice sessions on your own AFK service from the title bar.",
-    authors: [{ name: "Mc5mr", id: 523157034141745153n }],
+    authors: [Devs.f,Devs.r],
     tags: ["Voice", "Utility"],
 
     // Append a child without replacing Fragment, so VencordToolbox can wrap the same toolbar.
